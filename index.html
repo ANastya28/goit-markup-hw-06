@@ -403,28 +403,42 @@
             <form class="modal-form">
                 <div class="modal-field">
                     <label for="name" class="modal-label">Name</label>
-                    <input type="name" name="name" id="name">
+                    <div class="form-position">
+                        <input type="name" name="name" id="name" class="modal-input">
+                        <svg class="form-icon"  width="24px" height="24px">
+                           <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </div>
                 </div>
 
                 <div class="modal-field">
                     <label for="tel">Phone</label>
-                    <input type="tel" id="tel">
+                    <div class="form-position">
+                        <input type="tel" id="tel" class="modal-input">
+                        <svg class="form-icon" width="18px" height="24px">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </div>
 
                 <div class="modal-field">
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <div class="form-position">
+                        <input type="email" id="email" class="modal-input">
+                        <svg class="form-icon" width="18px" height="24px">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>
+                    </div>
                 </div>
                     
-                <div class="modal-field">
+                <div class="modal-field last">
                     <label for="comment">Comment</label>
-                    <textarea name="comment" id="comment" placeholder="Text input" class="modal-comment"></textarea>
+                    <textarea name="comment" id="comment" placeholder="Text input" class="textinput"></textarea>
                 </div>
 
-                <div class="modal-checkbox">
-                    <input type="checkbox" name="" value="policy" id="policy">
-                    <label for="policy">I accept the terms and conditions of the Privacy Policy</label>
-                </div>
+                    <input type="checkbox" name="" value="policy" id="policy" class="checkbox-input">
+                    <label for="policy" class="label-policy">I accept the terms and conditions of the Privacy Policy</label>
+                    <span class="icon"></span>
 
                 <button type="submit" class="modal-button">Send
                 </button>
