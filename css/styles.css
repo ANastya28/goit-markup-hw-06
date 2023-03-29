@@ -292,6 +292,10 @@ body {
    position: relative;
 }
 
+.form-policy {
+    display: flex;
+}
+
 .form-icon {
     position: absolute;
     left: 16px;
@@ -305,8 +309,8 @@ body {
 
 
 .checkbox-input {
-  appearance: none;
-  position: absolute;
+  /* appearance: none;
+  position: absolute; */
   display: inline-block;
 }
 
@@ -314,9 +318,10 @@ body {
     display: inline-block;
 
     font-size: 12px;
-    line-height: 11.17;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--icon-color);
+    margin-bottom: 24px;
 }
 
 .icon {
@@ -336,6 +341,10 @@ body {
 .checkbox-input:checked ~.icon {
     background-color: var(--accent-color);
     border: var(--accent-color);
+}
+
+.link-policy {
+   color: var(--button-backgraund-color);
 }
 
 /* .section.no-padding {
@@ -1048,7 +1057,7 @@ img {
     letter-spacing: 0.04em;
 }
 
-.footer-form input {
+.footer-input {
     margin: 0;
     padding: 8px 16px;
     background-color: var(--footer-backgraund-color);
@@ -1061,4 +1070,10 @@ img {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:focus {
+    border-color: var(--accent-color);
 }
