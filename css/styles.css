@@ -79,7 +79,7 @@ body {
 }
 
 .container {
-    max-width: 1128px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -179,6 +179,7 @@ body {
     letter-spacing: 0.02em;
     font-weight: 500;
     text-align: center;
+    margin: 0 0 16px;
 }
 
 .modal-button {
@@ -228,13 +229,13 @@ body {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: transparent;
 
     width: 100%;
     height: 40px;
 
-    outline: transparent;
     color: var(--primary-text-color);
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 0.02em;
     line-height: 1.5;
 
@@ -263,17 +264,16 @@ body {
     width: 100%;
     height: 120px;
 
-    opacity: 0.2;
     border: 1px solid #2E2F42;
     border-radius: 4px;
-    background-color: transparent;
-    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
 
     padding: 8px 16px;
     resize: none;
 
     color: var(--primary-text-color);
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 0.02em;
     line-height: 1.5;
     
@@ -287,9 +287,6 @@ body {
 
 .textinput::placeholder {
    color: rgba(46, 47, 66, 0.4);
-   font-size: 12px;
-   line-height: 1.17;
-   letter-spacing: 0.04em;
 }
 
 .form-position {
@@ -333,7 +330,7 @@ body {
    width: 16px;
    height: 16px;
 
-   border: 1px solid #2E2F42;
+   border: 1px solid rgba(46, 47, 66, 0.4); 
    border-radius: 2px;
    background-image: url('../images/submit-policy.svg');
    background-size: 10px 8px;
@@ -345,11 +342,10 @@ body {
 
 .checkbox-input:checked ~.icon {
     background-color: var(--accent-color);
-    border: var(--accent-color);
 }
 
 .checkbox-input:focus ~.icon {
-    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .link-policy {
